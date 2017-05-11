@@ -1,0 +1,9 @@
+2017-05-11 18:33:33,193 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: Group_Projetos:Art_Projeto:0.0.1-SNAPSHOT @ C:\Users\leand\Documents\Projetos\JAVA\Proj_Thiago\ProjetoEstudo\Art_Projeto\pom.xml.
+2017-05-11 18:33:34,411 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Art_Projeto/src/main/java
+2017-05-11 18:33:34,413 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Art_Projeto/src/main/resources
+2017-05-11 18:33:34,414 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Art_Projeto/src/test/java
+2017-05-11 18:33:34,415 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Art_Projeto/src/test/resources
+2017-05-11 18:33:37,444 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-11 18:33:37,456 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-05-11 18:33:37,459 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-05-11 18:33:37,469 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
