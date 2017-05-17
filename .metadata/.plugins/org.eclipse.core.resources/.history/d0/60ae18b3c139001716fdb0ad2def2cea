@@ -1,0 +1,44 @@
+package br.com.SpringMVC;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+@RequestMapping("pessoas")
+public class RetornoController {
+
+	@RequestMapping(value="/teste", method = RequestMethod.GET, produces = "application/json")
+	public @ResponseBody Pessoa teste(){
+		Pessoa pessoa = new Pessoa();
+		pessoa.setEmail("leandro@dsgdg");
+		pessoa.setName("leandro");
+		return pessoa;
+	}
+	
+	
+	Pessoa pessoa = new Pessoa();
+	 
+    @RequestMapping(value = "/{name}", method = RequestMethod.GET, produces = "application/json")
+    public @ResponseBody Pessoa getEmployeeInJSON(@PathVariable String name) {
+ 
+	    pessoa.setName(name);
+	    pessoa.setEmail(name+"@fabricaDeMonstro.com");
+	 
+	   	return pessoa;
+ 
+    }
+ 
+    @RequestMapping(value = "/{name}.xml", method = RequestMethod.GET, produces = "application/xml")
+    public @ResponseBody Pessoa getEmployeeInXML(@PathVariable String name) {
+ 
+    	pessoa.setName(name);
+    	pessoa.setEmail(name+"@fabricaDeMonstro.com");
+ 
+    	return pessoa;
+ 
+    }
+ 
+}

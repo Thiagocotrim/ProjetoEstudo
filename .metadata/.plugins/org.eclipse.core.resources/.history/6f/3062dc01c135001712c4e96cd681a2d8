@@ -1,0 +1,26 @@
+package br.com.Spring;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import br.com.Model.Pessoa;
+
+@Controller
+public class ArquiteturaSpring {
+
+	@RequestMapping("/chamarOK")
+	public String chamarPagina(){
+		return "ok";
+	}
+	
+	@RequestMapping(value="/retornarObjeto", method=RequestMethod.POST)
+	public  @ResponseBody String retornarObjeto(Pessoa pessoa){
+		if(pessoa.getIdade()>=18){
+			pessoa.setNome(pessoa.getNome()+" Maior de idade da Silva");
+		}
+		return "Teste";
+	}
+	
+}

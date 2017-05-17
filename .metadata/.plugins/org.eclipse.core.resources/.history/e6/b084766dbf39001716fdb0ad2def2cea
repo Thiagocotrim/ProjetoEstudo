@@ -1,0 +1,32 @@
+package br.com.SpringMVC;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+
+@Controller
+@RequestMapping("pessoas")
+public class RetornoController {
+
+	Employee employee = new Employee();
+	 
+    @RequestMapping(value = "/{name}", method = RequestMethod.GET, produces = "application/json")
+    public @ResponseBody Employee getEmployeeInJSON(@PathVariable String name) {
+ 
+   	 employee.setName(name);
+   	 employee.setEmail(name+"@fabricaDeMonstro.com");
+ 
+   	 return employee;
+ 
+    }
+ 
+    @RequestMapping(value = "/{name}.xml", method = RequestMethod.GET, produces = "application/xml")
+    public @ResponseBody Employee getEmployeeInXML(@PathVariable String name) {
+ 
+   	 employee.setName(name);
+   	 employee.setEmail((name+"@fabricaDeMonstro.com");
+ 
+   	 return employee;
+ 
+    }
+ 
+}

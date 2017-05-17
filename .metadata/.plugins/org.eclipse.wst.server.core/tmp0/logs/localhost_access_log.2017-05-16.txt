@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [16/May/2017:00:33:29 -0300] "GET /RetornoJsonXML/pessoas/leandro HTTP/1.1" 200 68
+0:0:0:0:0:0:0:1 - - [16/May/2017:00:33:36 -0300] "GET /RetornoJsonXML/pessoas/teste HTTP/1.1" 200 50
+127.0.0.1 - - [16/May/2017:00:35:11 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/May/2017:00:35:12 -0300] "GET /RetornoJsonXML/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [16/May/2017:00:48:12 -0300] "GET /RetornoJsonXML/pessoas/leandro/monstrosHard HTTP/1.1" 200 64
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:07:51 -0300] "GET /RetornoJsonXML/pessoas/leandro/monstrosHard HTTP/1.1" 200 64
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:07:55 -0300] "GET /RetornoJsonXML/pessoas/leandro.xml HTTP/1.1" 200 150
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:07:59 -0300] "GET /RetornoJsonXML/pessoas/teste HTTP/1.1" 200 50
+127.0.0.1 - - [16/May/2017:01:28:04 -0300] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:28:05 -0300] "GET /RetornoJsonXML/ HTTP/1.1" 200 57
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:28:15 -0300] "GET /RetornoJsonXML/pessoas/teste HTTP/1.1" 200 50
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:30:58 -0300] "GET /RetornoJsonXML/gerar/email?nome=leandro&email=monstroPraCarai HTTP/1.1" 200 63
+0:0:0:0:0:0:0:1 - - [16/May/2017:01:31:28 -0300] "GET /RetornoJsonXML/gerar/email?nome=leandro&email=monstroPraCarai HTTP/1.1" 200 70

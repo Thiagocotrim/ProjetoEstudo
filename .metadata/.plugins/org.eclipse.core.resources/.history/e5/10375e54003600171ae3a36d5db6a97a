@@ -1,0 +1,8 @@
+package br.com.Controllers;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet(name="LoginAjax", urlPatterns={"/loginAjax"})
+public class LoginAjaxController {
+
+}

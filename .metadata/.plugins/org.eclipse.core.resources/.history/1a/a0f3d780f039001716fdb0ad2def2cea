@@ -1,0 +1,22 @@
+package br.com.SpringMVC;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.Model.Pessoa;
+
+@RestController
+@RequestMapping(value = "gerar")
+public class RequestParamREST {
+
+	@RequestMapping(value={"email","enderecoEletronico"}, method=RequestMethod.GET, produces="application/json")
+	public @ResponseBody Pessoa gerarEmail(@RequestParam(value="nome", required=true) String nome, @RequestParam(value="email", required=true) String email){
+		Pessoa pessoa = new Pessoa();
+		pessoa.setName(nome);
+		pessoa.setEmail("@"+email+".com.br");
+		return pessoa;
+	}
+}

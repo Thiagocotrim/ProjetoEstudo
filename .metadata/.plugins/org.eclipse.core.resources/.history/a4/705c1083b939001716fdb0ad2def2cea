@@ -1,0 +1,30 @@
+package br.com.SpringMVC;
+
+
+@Controller
+@RequestMapping("employees")
+public class RetornoController {
+
+	Employee employee = new Employee();
+	 
+    @RequestMapping(value = "/{name}", method = RequestMethod.GET, produces = "application/json")
+    public @ResponseBody Employee getEmployeeInJSON(@PathVariable String name) {
+ 
+   	 employee.setName(name);
+   	 employee.setEmail("employee1@genuitec.com");
+ 
+   	 return employee;
+ 
+    }
+ 
+    @RequestMapping(value = "/{name}.xml", method = RequestMethod.GET, produces = "application/xml")
+    public @ResponseBody Employee getEmployeeInXML(@PathVariable String name) {
+ 
+   	 employee.setName(name);
+   	 employee.setEmail("employee1@genuitec.com");
+ 
+   	 return employee;
+ 
+    }
+ 
+}

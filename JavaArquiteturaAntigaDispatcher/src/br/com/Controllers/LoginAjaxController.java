@@ -1,0 +1,40 @@
+package br.com.Controllers;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.google.gson.Gson;
+
+import br.com.Model.Usuario;
+
+@WebServlet("/loginAjax")
+public class LoginAjaxController extends HttpServlet{
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		System.out.println("Chegou REquest");
+		// TODO Auto-generated method stub
+		List<Usuario> nomes = new ArrayList<Usuario>();
+//		Gson gson = new Gson();
+//		Usuario user1 = new Usuario();
+//		user1.setBotao("voltar");
+//		user1.setNome("jose");
+//		user1.setPassword("63319470");
+//		nomes.add(user1);
+//		
+//		String nomesJson = gson.toJson(nomes);
+//		System.out.println("nomeJson"+nomesJson);
+		
+		resp.setContentType("application/json");
+		resp.setCharacterEncoding("UTF-8");
+		resp.getWriter().write("{\"nome\":\"sdfsd Maior de idade da Silva\",\"idade\":132}");
+		
+	}
+	
+}
